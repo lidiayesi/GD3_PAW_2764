@@ -13,3 +13,10 @@ p.bio{ color: #444; font-style: italic;
     align-items: center;
     flex-wrap: wrap;
 }
+
+@media (max-width: 600px){
+    .kontainer-profil { 
+        flex-direction: column; 
+        align-items: center; 
+  }
+}
