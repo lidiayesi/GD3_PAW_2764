@@ -6,3 +6,10 @@ body { background-color: #f4f4f4; font-family: Verdana, sans-serif;
 
 p.bio{ color: #444; font-style: italic;
 }
+
+.kontainer-profil{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    flex-wrap: wrap;
+}
