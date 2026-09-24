@@ -19,4 +19,8 @@ p.bio{ color: #444; font-style: italic;
         flex-direction: column; 
         align-items: center; 
   }
+  
+  table{
+    font-size: 12px;
+  }
 }
