@@ -18,8 +18,14 @@
         <button onclick="tampilkanNama()">Tampilkan</button>
 
         <br><br>
-        <a href="profil.html">Kembali ke Profil</a> |
-        <a href="form.html">Buka Form Pendaftaran</a>
+        <label for="inputAngka">Masukkan Angka: </label><br>
+        <input type="number" id="inputAngka" placeholder="Masukkan angka">
+        <button onclick="hitungKuadrat()">Hitung Kuadrat</button>
+        <p id="hasilKuadrat"></p>
+
+        <br><br>
+        <a href="profil.html" onclick="return confirm('Apakah Anda yakin ingin kembali ke halaman Profil?')">Kembali ke Profil</a> |
+        <a href="form.html" onclick="return confirm('Apakah Anda yakin ingin membuka Form Pendaftaran?')">Buka Form Pendaftaran</a>
 
         <script>
             const judul = document.getElementById("judulHalaman");
@@ -38,6 +44,16 @@
                     alert("Silahkan isi nama terlebih dahulu");
                 }else{
                     alert("Halo, " + nama + "!");
+                }
+            }
+
+            function hitungKuadrat(){
+                const angka = document.getElementById("inputAngka").value;
+                if(angka === ""){
+                    alert("Silahkan masukkan terlebih dahulu");
+                }else{
+                    const hasil = angka * angka;
+                    document.getElementById("hasilKuadrat").innerHTML = "Hasil Kuadrat: " + hasil;
                 }
             }
         </script>
