@@ -7,10 +7,16 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Halaman Interaktif</h1>
+        <h1 id="judulHalaman">Halaman Interaktif</h1>
 
         <br><br>
         <a href="profil.html">Kembali ke Profil</a> |
         <a href="form.html">Buka Form Pendaftaran</a>
+
+        <script>
+            const judul = document.getElementById("judulHalaman");
+            judul.style.color ="green";
+            console.log(judul.innerHTML);
+        </script>
     </body>
 </html>
