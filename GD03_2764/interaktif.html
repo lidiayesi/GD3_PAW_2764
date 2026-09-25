@@ -9,6 +9,9 @@
     <body>
         <h1 id="judulHalaman">Halaman Interaktif</h1>
 
+        <p id="teks">Teks ini bisa berubah!</p>
+        <button onclick="ubahBiru()">Ubah ke Biru</button>
+
         <br><br>
         <a href="profil.html">Kembali ke Profil</a> |
         <a href="form.html">Buka Form Pendaftaran</a>
@@ -17,6 +20,11 @@
             const judul = document.getElementById("judulHalaman");
             judul.style.color ="green";
             console.log(judul.innerHTML);
+
+            function ubahBiru(){
+                const teksBerubah = document.getElementById("teks");
+                teksBerubah.style.color = "blue";
+            }
         </script>
         
         <script>
