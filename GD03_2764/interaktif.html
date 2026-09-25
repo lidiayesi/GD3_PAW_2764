@@ -13,6 +13,11 @@
         <button onclick="ubahBiru()">Ubah ke Biru</button>
 
         <br><br>
+        <label for="inputNama">Nama</label><br>
+        <input type="text" id="inputNama" placeholder="Masukkan nama">
+        <button onclick="tampilkanNama()">Tampilkan</button>
+
+        <br><br>
         <a href="profil.html">Kembali ke Profil</a> |
         <a href="form.html">Buka Form Pendaftaran</a>
 
@@ -24,6 +29,16 @@
             function ubahBiru(){
                 const teksBerubah = document.getElementById("teks");
                 teksBerubah.style.color = "blue";
+            }
+
+            function tampilkanNama(){
+                const nama = document.getElementById("inputNama").value;
+
+                if(nama == ""){
+                    alert("Silahkan isi nama terlebih dahulu");
+                }else{
+                    alert("Halo, " + nama + "!");
+                }
             }
         </script>
         
